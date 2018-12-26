@@ -5,7 +5,7 @@
 
 ### Concept
 
-*Catch a Cold* is a survival game in which you have to stay warm on a snowy mountain. On your way to your family's Christmas reunion, your car breaks down due to a freak incident on a dirt road outside of civilization. You are lost in a blizzard, and you must stay alive until help arrives (whenever that will be). To do this, you have to make use of your environment and your prepared inventory of camping items in creative and desperate ways.
+*Catch a Cold* is a survival game in which you have to stay warm on a snowy mountain. It starts when, on your way to your family's Christmas reunion, your car breaks down due to a freak incident on a dirt road outside of civilization. You are lost in a blizzard, and you must stay alive until someone drives by (whenever that will be). To do this, you have to make use of your environment and your prepared inventory of camping items in creative and desperate ways.
 
 ### Genre
 
@@ -37,7 +37,7 @@ The player starts out with 7 pieces of food.
 
 ### Mechanics
 
-The world is composed of the environment (which is static and unusable) and the entities (which can be picked up and moved).
+The world is composed of the environment (which is static and unusable) and entities (which can be picked up and moved).
 
 **Environment**
 - Complete list:
@@ -57,12 +57,30 @@ The world is composed of the environment (which is static and unusable) and the 
   - These attributes determine how the entity interact with the world and what the player can do with it.
   - Complete list of attributes:
     - Ignitable (only possessed by flintstones)
-    - Shiny (possessed by anything that can be used to intensify the sun in order to make fire)
-
+    - Burnable
+    <!-- - Shiny (possessed by anything that can be used to intensify the sun in order to make fire) -->
 
 ## Story, Setting and Character
 
+### Story and Narrative
+
+The introduction to the game is a cut scene that shows the character's car break down. It then shows the character get out of the car and look around. Then the game starts (the character's control is passed from the cut scene to the player).
+
+The game ends when a car drives by and the player runs up to it. When this happens, the player wins.
+
+*Note: Since the times that cars drive by is randomized, the player will be given a score based on the time she survived for.*
+
+### Game World
+
+The game takes place in our world. Specifically, this is anywhere (left open) where the climate is cold and somewhat harsh.
+
+### Characters
+
+The player character is left open (i.e. there is no backstory or given personality). For simplicity, every character that drives by in a car is nice enough to pick up the PC.
+
 ## Level
+
+There is only one level, the blizzard in which the player has to stay alive.
 
 ## Interface
 
@@ -77,15 +95,17 @@ The world is composed of the environment (which is static and unusable) and the 
 The following remains to be done:
 - **Design**
   - [ ] Finish this document.
-    - [ ] *Story, Setting and Character*
-    - [ ] *Level*
+    - [x] *Story, Setting and Character*
+    - [x] *Level*
     - [ ] *Interface*
     - [ ] *AI*
     - [ ] *Technical*
     - [ ] *Game Art*
 
 - **Development**
-  - [ ] Increase performance (1). Probably set up a chunking system.
+  - [ ] Increase performance (1).
+    - [ ] Set up a chunking system.
+  - [ ] Change fog algorithm from linear to something more realistic.
 
 - **3D Graphics**
 - **2D Graphics**
@@ -93,3 +113,4 @@ The following remains to be done:
 
 - **Music & Sound**
   - [ ] Create soundtrack.
+  - [ ] Find sound effects.
