@@ -16,8 +16,8 @@ I made this game open source because I'm addicted to open source.
 
 ## Contributing
 
-- **Contributions** are made through Unity Collaborate.
-- The team can **communicate** through [the Discord channel](https://discord.gg/UcDngF2) (where you can ask for a Unity Collaborate invite).
+- Contributions are made through Unity Collaborate.
+- The team can communicate through [the Discord channel](https://discord.gg/UcDngF2) (where you can ask for a Unity Collaborate invite).
 
 ## License
 
