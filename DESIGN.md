@@ -1,5 +1,6 @@
 # Catch a Cold
-{catch phrase}
+
+> Stay Alive for Christmas!
 
 ## Overview
 
