@@ -52,7 +52,7 @@ The world is composed of the environment (which is static and unusable) and enti
   - Food
   - Soda can
   - Water bottle
-- Mobile, usable
+- Mobile (nonstatic), usable (can be picked up and used by the PC)
 - Every entity has a set of attributes.
   - These attributes determine how the entity interact with the world and what the player can do with it.
   - Complete list of attributes:
@@ -80,37 +80,87 @@ The player character is left open (i.e. there is no backstory or given personali
 
 ## Level
 
-There is only one level, the blizzard in which the player has to stay alive.
+There is only one level, the blizzard in which the player has to stay alive. There is no training level.
 
 ## Interface
 
-## AI
+Catch a Cold has the following HUDs:
+- Hunger gauge
+- Temperature gauge (how cold you are)
+
+The PC is controlled with the following rules:
+- **To move**: `WASD`
+- **Sprint modifier**: `Shift`
+- **To jump**: `Spacebar`
+
+- **To collect an entity (item)**: `LMB` (no entity can be held while collecting a new one)
+- **To signal a car**: `LMB`
+- **To use an entity**: `RMB`
+- **To place an entity**: `RMB`
+
+## Artificial Intelligence
+
+The only AI in Catch a Cold is the cars driving on the road. Each car is spawned at a random time on a random side of the part of the road on the map. It continues driving at a globally constant speed, without changing directions until it reaches the other side; unless the player signals it so it stops, picks up the player; and continues driving until it reaches the other side.
 
 ## Technical
 
+This is a lightweight game, and most computers should be able to run it.
+
 ## Game Art
+
+The intended style of the game is harsh and blizzard-like. Visual and auditory art look and sound unforgiving and (somewhat) resemble a blizzard.
+
+Most assets are imported from the Unity Asset Store. All Unity assets used in this game are free ones. The following will be created by members of the team:
+- **Music**
 
 ## Schedule
 
 The following remains to be done:
 - **Design**
-  - [ ] Finish this document.
-    - [x] *Story, Setting and Character*
-    - [x] *Level*
-    - [ ] *Interface*
-    - [ ] *AI*
-    - [ ] *Technical*
-    - [ ] *Game Art*
+  - [**v0.1.0**]:
+    - [x] Finish this document.
+      - [x] *Story, Setting and Character*
+      - [x] *Level*
+      - [x] *Interface*
+      - [x] *AI*
+      - [x] *Technical*
+      - [x] *Game Art*
+  - [**v0.3.0**]:
+    - [ ] Finish list of entities.
+    - [ ] Finish list of attributes.
 
 - **Development**
-  - [ ] Increase performance (1).
-    - [ ] Set up a chunking system.
-  - [ ] Change fog algorithm from linear to something more realistic.
+  - [**v0.1.0**]:
+    - [ ] Increase performance (1).
+      - [ ] Set up a chunking system (that loads and unloads with the player).
+  - [**v0.2.0**]:
+    - Create accumulated snow effect:
+      - [ ] Create shader and visual effect
+    - Create snowing effect
+      - [ ] Change fog algorithm from linear to something more realistic.
+      - [ ] Generate particles?
+    - Implement day / night lighting (no skybox because the sky is snow)
+  - [**v0.3.0**]:
+    - [ ] Implement custom entity system.
+  - [**v0.4.0**]:
+    - [ ] Implement car AI.
+  - [**v0.5.0**]:
+    - [ ] Replace default player interface with that found in *Interface*.
+      - [ ] Controls
+      - [ ] HUD
+  - [**v0.6.0**]:
+    - [ ] Implement game menus and screens.
+    - [ ] Implement cut scenes and organize with game play.
 
 - **3D Graphics**
+  - [ ] [**v0.3.0**]:
+    - [ ] Find a model for each entity.
+
 - **2D Graphics**
-  - TBD
+  - [ ] [**v0.3.0**]:
+    - [ ] Create a 2D icon for each entity?
 
 - **Music & Sound**
-  - [ ] Create soundtrack.
-  - [ ] Find sound effects.
+  - [ ] [**v0.6.0**]:
+    - [ ] Create soundtrack.
+    - [ ] Find sound effects.
