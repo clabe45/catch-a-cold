@@ -134,7 +134,9 @@ The following remains to be done:
   - [**v0.1.0**]:
     - [ ] Increase performance (1).
       - [ ] Set up a chunking system (that loads and unloads with the player).
+
   - [**v0.2.0**]:
+    - Paint road on terrain
     - Create accumulated snow effect:
       - [ ] Create shader and visual effect
     - Create snowing effect
@@ -165,3 +167,13 @@ The following remains to be done:
   - [ ] [**v0.6.0**]:
     - [ ] Create soundtrack.
     - [ ] Find sound effects.
+
+### Versions
+
+- v0.1.0 - Terrain Update
+- v0.2.0 - Graphics Update
+- v0.3.0 - Entity Update
+- v0.4.0 - AI Update
+- v0.5.0 - Player Update
+- v0.6.0 - Production Update
+- v0.7.0 - Easter Egg & Fun Update!
