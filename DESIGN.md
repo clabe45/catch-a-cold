@@ -136,7 +136,6 @@ The following remains to be done:
       - [ ] Set up a chunking system (that loads and unloads with the player).
 
   - [**v0.2.0**]:
-    - Paint road on terrain
     - Create accumulated snow effect:
       - [ ] Create shader and visual effect
     - Create snowing effect
