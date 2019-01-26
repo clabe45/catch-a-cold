@@ -18,6 +18,8 @@ public class AccumSnow : MonoBehaviour {
     public void Start () {
         // send normals to shader
         GetComponent<Camera>().depthTextureMode |= DepthTextureMode.DepthNormals;
+
+        material = new Material(Shader.Find("Custom/AccumSnow"));
     }
 
     public void OnRenderImage(RenderTexture src, RenderTexture dst) {

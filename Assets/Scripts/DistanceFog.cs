@@ -5,15 +5,25 @@ using UnityEngine;
 // TODO: input values to this script, rather than creating a shader material
 
 public class DistanceFog : MonoBehaviour {
-    public Material shaderMaterial;
+    public Color fogColor = Color.gray;
+    public float fogDensity = 0.1f, fogNearPercent = 0, fogFarPercent = 1;
+    private Material material;
 
     public void Start () {
-        Camera cam = GetComponent<Camera>();
-        // send depth to shaders? https://www.ronja-tutorials.com/2018/07/01/postprocessing-depth.html
-        cam.depthTextureMode = cam.depthTextureMode | DepthTextureMode.Depth;
+        // to send depth to shaders? https://www.ronja-tutorials.com/2018/07/01/postprocessing-depth.html
+        GetComponent<Camera>().depthTextureMode |= DepthTextureMode.Depth;
+
+        material = new Material(Shader.Find("Custom/DistanceFog"));
     }
 
     public void OnRenderImage(RenderTexture src, RenderTexture dst) {
-        Graphics.Blit(src, dst, shaderMaterial);
+        // set shader properties
+        material.SetColor("_FogColor", fogColor);
+        material.SetFloat("_FogDensity", fogDensity);
+        material.SetFloat("_FogNear01", fogNearPercent);
+        material.SetFloat("_FogFar01", fogFarPercent);
+
+        // execute shader
+        Graphics.Blit(src, dst, material);
     }
 }

@@ -55,10 +55,10 @@
 				fixed4 col = tex2D(_MainTex, i.uv);
                 // distance from camera as percentage (of `far`)
                 float depth = tex2D(_CameraDepthTexture, i.uv).r;
-                depth = Linear01Depth(depth);x
+                depth = Linear01Depth(depth);
                 float oneMinusFog = saturate((_FogFar01 - depth) / (_FogFar01 - _FogNear01));
                 col.rgb = lerp(_FogColor, col.rgb, oneMinusFog);
-				return col;
+				return tex2D(_MainTex, i.uv);
 			}
 			ENDCG
 		}
