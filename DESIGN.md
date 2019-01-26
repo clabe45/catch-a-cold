@@ -134,7 +134,9 @@ The following remains to be done:
   - [**v0.1.0**]:
     - [ ] Increase performance (1).
       - [ ] Set up a chunking system (that loads and unloads with the player).
+
   - [**v0.2.0**]:
+    - Paint road on terrain
     - Create accumulated snow effect:
       - [ ] Create shader and visual effect
     - Create snowing effect
@@ -154,14 +156,33 @@ The following remains to be done:
     - [ ] Implement cut scenes and organize with game play.
 
 - **3D Graphics**
+  - [ ] [**v0.1.1]**]:
+    - [ ] Paint road onto terrain.
+    - [ ] Add rocks and shrubs.
   - [ ] [**v0.3.0**]:
-    - [ ] Find a model for each entity.
+    - [ ] Create a model for each entity.
 
 - **2D Graphics**
+  - [ ] [**v0.1.1**]:
+    - [ ] Add road texture (either pavement or dirt)
   - [ ] [**v0.3.0**]:
     - [ ] Create a 2D icon for each entity?
+  - [ ] [**v0.6.0**]:
+    - [ ] Create main menu background art.
+    - [ ] Create menu button sprites.
 
 - **Music & Sound**
   - [ ] [**v0.6.0**]:
     - [ ] Create soundtrack.
     - [ ] Find sound effects.
+
+### Versions
+
+- v0.1.0 - Terrain Update
+  - v0.1.1 - Terrain Detail Update
+- v0.2.0 - Graphics Update
+- v0.3.0 - Entity Update
+- v0.4.0 - AI Update
+- v0.5.0 - Player Update
+- v0.6.0 - Production Update
+- v0.7.0 - Easter Egg & Fun Update!
