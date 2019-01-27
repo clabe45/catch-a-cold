@@ -132,13 +132,13 @@ The following remains to be done:
 
 - **Development**
   - [**v0.1.0**]:
-    - [ ] Increase performance (1).
-      - [ ] Set up a chunking system (that loads and unloads with the player).
+    - [x] Increase performance (1).
+      - [x] Set up a chunking system (that loads and unloads with the player).
 
   - [**v0.2.0**]:
-    - Create accumulated snow effect:
+    - [ ] Create accumulated snow effect:
       - [ ] Create shader and visual effect
-    - Create snowing effect
+    - [ ] Create snowing effect
       - [ ] Change fog algorithm from linear to something more realistic.
       - [ ] Generate particles?
     - Implement day / night lighting (no skybox because the sky is snow)
@@ -167,6 +167,7 @@ The following remains to be done:
   - [ ] [**v0.3.0**]:
     - [ ] Create a 2D icon for each entity?
   - [ ] [**v0.6.0**]:
+    - [ ] Create icon
     - [ ] Create main menu background art.
     - [ ] Create menu button sprites.
 
