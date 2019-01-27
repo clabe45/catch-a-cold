@@ -8,7 +8,7 @@ Catch a Cold is a small first-person survival game built in Unity. It's currentl
 
 ## Installation
 
-You can download the latest pre-release [here](https://github.com/clabe45/releases/latest).
+You can download the latest pre-release [here](https://github.com/clabe45/catch-a-cold/releases/latest).
 
 ## Why Open Source?
 
